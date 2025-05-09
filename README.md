@@ -25,9 +25,8 @@ In progress — content and design are still under development.
 
 ## Credits
 
-Made by **tonksflipp**, as a beginner project.
+Made by [**tonksflipp**](https://github.com/tonksflipp), as a beginner project.
 
 ---
 
 Thank you for checking out **Numanthia**!
-
