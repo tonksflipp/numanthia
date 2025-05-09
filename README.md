@@ -1,3 +1,4 @@
+
 # Numanthia
 
 **Numanthia** is a small beginner-friendly digital encyclopedia project.  
@@ -17,7 +18,14 @@ Numanthia was created as a personal learning project, to practice web developmen
 
 ## How to Use
 
-Open the `index.html` file in your browser, or host the project on a simple static site service (like GitHub Pages).
+To view the project, follow these steps:
+
+1. **Download** or **clone** this repository to your computer.
+2. Locate the `index.html` file in the project folder.
+3. **Open** the `index.html` file in any modern web browser (Chrome, Firefox, Edge, etc.).
+4. **Note**: If you have any assets (images, CSS, or JS files), make sure the file paths are correct, especially if you move or rename folders.
+
+Alternatively, you can host the project on a static site service like **GitHub Pages** to make it accessible online.
 
 ## Project Status
 
