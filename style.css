@@ -1,12 +1,20 @@
 body {
     display: flex;
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;    /* centra verticalmente */
-    min-height: 100vh;      /* usa toda la altura de la ventana */
-    flex-direction: column; /* organiza los elementos en columna */
-    margin: 0;              /* elimina márgenes del navegador */
+    justify-content: center; 
+    align-items: center;   
+    min-height: 100vh;      
+    flex-direction: column;
+    margin: 0;             
 }
 img {
     max-width: 600px;
     height: auto;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    text-align: center;
 }
