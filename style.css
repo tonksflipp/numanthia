@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     display: flex;
     justify-content: center; /* centra horizontalmente */
@@ -10,3 +11,10 @@ img {
     max-width: 600px;
     height: auto;
 }
+=======
+
+
+img {
+    max-width: 600px;
+    }
+>>>>>>> Stashed changes
