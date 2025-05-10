@@ -1,20 +1,5 @@
-body {
-    display: flex;
-    justify-content: center; 
-    align-items: center;   
-    min-height: 100vh;      
-    flex-direction: column;
-    margin: 0;             
-}
+
 img {
     max-width: 600px;
-    height: auto;
-}
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1000;
-    text-align: center;
+    
 }
