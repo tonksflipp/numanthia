@@ -1,20 +1,4 @@
-<<<<<<< Updated upstream
-body {
-    display: flex;
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;    /* centra verticalmente */
-    min-height: 100vh;      /* usa toda la altura de la ventana */
-    flex-direction: column; /* organiza los elementos en columna */
-    margin: 0;              /* elimina márgenes del navegador */
-}
 img {
-    max-width: 600px;
-    height: auto;
-}
-=======
-
-
-img {
+    
     max-width: 600px;
     }
->>>>>>> Stashed changes
