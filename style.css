@@ -1,0 +1,45 @@
+@font-face {
+  font-family: PixelText;
+  src: url(https://assets.codepen.io/36869/Grand9KPixel.ttf);
+}
+
+:root {
+  font-family: 'PixelText', serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* 🎮 Paleta de colores retro */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #000000;
+  
+}
+
+body {
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li a {
+  color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+  border: 2px solid var(--accent-color);
+}
+
+main li a{
+  color: inherit;
+}
+
