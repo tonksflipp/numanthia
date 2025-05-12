@@ -10,7 +10,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* 🎮 Paleta de colores retro */
+  /* 🎮 Paleta de colores */
   --bg-color: #ffffff;
   --text-color: #000000;
   --accent-color: #000000;
@@ -41,9 +41,15 @@ nav li a {
   text-decoration: none;
   border: 2px solid var(--accent-color);
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PixelText', serif;
   font-weight: 400; /* Asegúrate de que el peso se ajuste a lo que quieres */
+}
+
+main{
+border: 2px solid var(--accent-color);
+padding: 0 1.5rem;
 }
 
 main li a{
