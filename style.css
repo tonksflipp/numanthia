@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @font-face {
   font-family: PixelText;
   src: url(https://assets.codepen.io/36869/Grand9KPixel.ttf);
 }
 
 :root {
-  font-family: 'PixelText', serif;
+  font-family: 'Nunito', sans-serif;
   font-optical-sizing: auto;
   line-height: 1.5;
   font-weight: 400;
@@ -37,6 +38,10 @@ nav li a {
   display: block;
   text-decoration: none;
   border: 2px solid var(--accent-color);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PixelText', serif;
+  font-weight: 400; /* Asegúrate de que el peso se ajuste a lo que quieres */
 }
 
 main li a{
