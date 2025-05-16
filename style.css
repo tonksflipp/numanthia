@@ -21,6 +21,7 @@ header{
   margin-left: 220px; /* ajusta para dejar espacio a la barra */
   margin-top: 0;
   margin-right: 1.5rem;
+  
 }
 
 body {
@@ -33,7 +34,7 @@ body {
 
 nav {
   position: fixed;       /* barra fija a la izquierda */
-  top: 6rem;
+  top: 13rem;
   left: 0;
   height: 100vh;         /* altura completa de la ventana */
   width: 200px;          /* ancho fijo */
@@ -73,6 +74,7 @@ nav li a:focus {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PixelText', serif;
   font-weight: 400;
+  font-size: 3rem;
 }
 
 main{
