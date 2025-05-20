@@ -65,7 +65,6 @@ nav li a {
   display: block;
   text-decoration: none;
   border: 2px solid var(--accent-color);
-  border-radius: 4px;   /* suaviza bordes */
   transition: background-color 0.3s, color 0.3s;
 }
 
