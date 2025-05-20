@@ -24,7 +24,7 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   width: 100%;  
 }
 
@@ -38,7 +38,6 @@ body {
 
 nav {
   position: fixed;       /* barra fija a la izquierda */
-  
   left: 0;
   height: 100vh;         /* altura completa de la ventana */
   width: 200px;          /* ancho fijo */
@@ -74,6 +73,10 @@ nav li a:hover,
 nav li a:focus {
   background-color: var(--accent-color);
   color: var(--bg-color);
+}
+
+.subtitle{
+  font-size: 1.2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,4 +126,6 @@ footer {
   font-size: 1rem;
   max-width: 20rem;
   width: 100%;
+  margin-top: 2rem;
+  margin-right: 5rem;
 }
