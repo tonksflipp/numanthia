@@ -38,7 +38,7 @@ body {
 
 nav {
   position: fixed;       /* barra fija a la izquierda */
-  top: 14rem;
+  
   left: 0;
   height: 100vh;         /* altura completa de la ventana */
   width: 200px;          /* ancho fijo */
@@ -46,7 +46,7 @@ nav {
   padding: 1rem;
   box-sizing: border-box;
   overflow-y: auto;      /* si hay muchos ítems, que se pueda scrollear */
-  margin-top: 4rem;
+  
 }
 
 nav ul {
@@ -82,9 +82,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
 }
 
+h1{
+  margin: 0;
+}
 
 main{
   margin-left: 10.75rem;
+  margin-top:1rem;
   border: 2px solid var(--accent-color);
   padding: 0 1.5rem 3rem;
 }
