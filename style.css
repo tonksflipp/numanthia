@@ -117,7 +117,7 @@ section::after {
 }
 
 footer {
-  margin-left: 220px; /* ajusta para dejar espacio a nav */
+  margin-left: 220px;
   text-align: right;
   padding-right: 1rem;
 }
