@@ -19,7 +19,12 @@
 }
 .div-left
 {  display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+}
+  .div-right {
+  display: flex;
+  gap: 0; /* Puedes usar `gap` para controlar el espacio entre input y botón si quieres */
+}
 
 header {
   display: flex;
@@ -129,3 +134,5 @@ footer {
   margin-top: 2rem;
   margin-right: 5rem;
 }
+#searchButton{
+margin-top: 2rem;}
