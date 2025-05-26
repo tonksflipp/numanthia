@@ -11,6 +11,7 @@ This project is mainly for learning and practice — not a professional or large
 - Basic static website with simple navigation
 - Easy-to-read encyclopedia entries
 - Handwritten HTML and CSS (no frameworks or CMS)
+- Basic JavaScript functionality for enhanced interactivity
 
 ## Purpose
 
