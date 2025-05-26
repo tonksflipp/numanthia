@@ -1,47 +1,52 @@
-document.addEventListener('DOMContentLoaded', () => {
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+function buscar() {
   const input = document.getElementById('searchInput');
-  const button = document.getElementById('searchButton');
+  const query = input.value.trim().toLowerCase();
+  if (!query) return;
 
-  const main = document.querySelector('main');
+  // Redirigir a esta misma página con nueva búsqueda
+  window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+}
 
-  // Creamos el contenedor solo una vez
-  let resultsContainer = document.createElement('section');
-  resultsContainer.id = 'searchResultsSection';
-  main.appendChild(resultsContainer);
+function mostrarResultados(query) {
+  const resultsContainer = document.getElementById('results');
+  resultsContainer.innerHTML = '';
 
-  function buscar() {
-    const query = input.value.toLowerCase();
-    resultsContainer.innerHTML = ''; // limpiar resultados anteriores
+  const resultados = paginas.filter(p =>
+    p.titulo.toLowerCase().includes(query) ||
+    p.contenido.toLowerCase().includes(query)
+  );
 
-    if (!query) return;
+  const h2 = document.createElement('h2');
+  h2.textContent = `Results for "${query}"`;
+  resultsContainer.appendChild(h2);
 
-    const resultados = paginas.filter(p =>
-      p.titulo.toLowerCase().includes(query) ||
-      p.contenido.toLowerCase().includes(query)
-    );
+  const ul = document.createElement('ul');
 
-    const ul = document.createElement('ul');
-
-    if (resultados.length === 0) {
-      ul.innerHTML = '<li>No results found.</li>';
-    } else {
-      resultados.forEach(pagina => {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${pagina.url}"><strong>${pagina.titulo}</strong></a><br><small>${pagina.contenido}</small>`;
-        ul.appendChild(li);
-      });
-    }
-
-    // Título de resultados
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Search Results';
-
-    resultsContainer.appendChild(h2);
-    resultsContainer.appendChild(ul);
+  if (resultados.length === 0) {
+    const li = document.createElement('li');
+    li.textContent = 'No results found.';
+    ul.appendChild(li);
+  } else {
+    resultados.forEach(pagina => {
+      const li = document.createElement('li');
+      li.innerHTML = `<a href="${pagina.url}"><strong>${pagina.titulo}</strong></a><br><small>${pagina.contenido}</small>`;
+      ul.appendChild(li);
+    });
   }
 
-  button.addEventListener('click', buscar);
-  input.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') buscar();
-  });
+  resultsContainer.appendChild(ul);
+}
+
+// Ejecutar al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+  const query = getQueryParam('q');
+  if (query) {
+    document.getElementById('searchInput').value = query;
+    mostrarResultados(query.toLowerCase());
+  }
 });
