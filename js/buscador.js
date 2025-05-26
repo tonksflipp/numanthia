@@ -7,8 +7,6 @@ function buscar() {
   const input = document.getElementById('searchInput');
   const query = input.value.trim().toLowerCase();
   if (!query) return;
-
-  // Redirigir a esta misma página con nueva búsqueda
   window.location.href = `search.html?q=${encodeURIComponent(query)}`;
 }
 
@@ -42,11 +40,15 @@ function mostrarResultados(query) {
   resultsContainer.appendChild(ul);
 }
 
-// Ejecutar al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
   const query = getQueryParam('q');
   if (query) {
     document.getElementById('searchInput').value = query;
     mostrarResultados(query.toLowerCase());
+  }
+
+  const btn = document.getElementById('searchButton');
+  if (btn) {
+    btn.addEventListener('click', buscar);
   }
 });

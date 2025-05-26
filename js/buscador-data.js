@@ -2,7 +2,7 @@ const paginas = [
   {
     titulo: "Philosophers",
     url: "philosophers.html",
-    contenido: "Plato, Aristotle, Kant, Nietzsche and more thinkers who shaped the history of philosophy."
+    contenido: "Plato, Aristotle, Descartes, socrates and more thinkers who shaped the history of philosophy."
   },
   {
     titulo: "Concepts",
